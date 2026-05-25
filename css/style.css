@@ -276,10 +276,22 @@ table.cook td.good { color: var(--green); font-family: var(--mono); font-size: 0
   .slide--result .slide-cols { grid-template-columns: 1fr; }
   .slide--result .result-img { max-height: 44vh; }
   .promptpanel { position: static; margin-top: 4px; }
-  .promptpanel-body { max-height: 38vh; }
+  .promptpanel-body { max-height: 60vh; }
   .slide { padding: 20px 18px; }
   .slide-title { font-size: 1.35rem; }
   .hero h1 { font-size: 1.9rem; }
+
+  /* mobile: content scrolls; fixed bottom nav floats above it */
+  .stage { align-items: flex-start; padding: 10px 0; min-height: 0; }
+  .app { padding-bottom: 80px; }
+  .nav {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 100;
+    margin: 0; padding: 10px 14px;
+    background: var(--card); border-top: 1px solid var(--line);
+    box-shadow: 0 -3px 14px rgba(80,50,140,0.14);
+  }
+  .dots { display: none; }
+  .counter { flex: 1 1 auto; text-align: center; min-width: 0; }
 }
 
 /* ===== Phone ===== */
