@@ -303,6 +303,11 @@ table.cook td.good { color: var(--green); font-family: var(--mono); font-size: 0
   /* mobile header: hide the meta line, center the title */
   .brandbar { justify-content: center; text-align: center; }
   .brandbar .meta { display: none; }
+
+  /* stack the layer-flow diagrams top-to-bottom on mobile */
+  .flow { flex-direction: column; align-items: center; gap: 8px; }
+  .flow .node { width: 100%; max-width: 240px; text-align: center; }
+  .flow .arr { transform: rotate(90deg); line-height: 1; }
 }
 
 /* ===== Phone ===== */
