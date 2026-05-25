@@ -152,6 +152,7 @@ code {
   font-size: 0.82rem; color: var(--accent2); overflow-wrap: anywhere;
 }
 .frag .fl { display:block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-soft); margin-bottom: 6px; font-family: var(--mono); }
+.frag-scroll { max-height: 46vh; overflow: auto; }
 
 .note {
   font-size: 0.82rem; color: var(--text-dim);
@@ -276,7 +277,8 @@ table.cook td.good { color: var(--green); font-family: var(--mono); font-size: 0
   .slide--result .slide-cols { grid-template-columns: 1fr; }
   .slide--result .result-img { max-height: 44vh; }
   .promptpanel { position: static; margin-top: 4px; }
-  .promptpanel-body { max-height: 60vh; }
+  .promptpanel-body { max-height: none; overflow: visible; }
+  .frag-scroll { max-height: none; overflow: visible; }
   .slide { padding: 20px 18px; }
   .slide-title { font-size: 1.35rem; }
   .hero h1 { font-size: 1.9rem; }
