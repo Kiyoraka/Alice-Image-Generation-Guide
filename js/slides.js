@@ -61,23 +61,23 @@ window.SLIDES = [
     lead: `Subject (who) and Style (which skeleton) are chosen independently. Here: Naruto &perp; magazine-cover.`,
     body: `<p>The skeleton is 5 paragraphs. The <strong>fixed</strong> parts are the aesthetic carriers &mdash; they appear in every successful render:</p>
     <ul>
-      <li><b>&para;1</b> subject + features + wardrobe + pose + layout markers</li>
-      <li><b>&para;2</b> colour theme <span class="dim">(character-specific)</span></li>
-      <li><b>&para;3</b> background grammar <span class="dim">(fixed)</span></li>
-      <li><b>&para;4</b> quality + lighting <span class="dim">(mostly fixed)</span></li>
-      <li><b>&para;5</b> aspect + resolution <span class="dim">(fixed)</span></li>
+      <li><b>Paragraph 1</b> subject + features + wardrobe + pose + layout markers</li>
+      <li><b>Paragraph 2</b> colour theme <span class="dim">(character-specific)</span></li>
+      <li><b>Paragraph 3</b> background grammar <span class="dim">(fixed)</span></li>
+      <li><b>Paragraph 4</b> quality + lighting <span class="dim">(mostly fixed)</span></li>
+      <li><b>Paragraph 5</b> aspect + resolution <span class="dim">(fixed)</span></li>
     </ul>
     <p>Only the variables change per cover. The panel builds paragraph by paragraph. &rarr;</p>`
   },
   {
-    track: 'raya', kind: 'step', badge: 'FILL ¶1 · SUBJECT', titlePlain: 'Character + festive wardrobe',
+    track: 'raya', kind: 'step', badge: 'FILL Paragraph 1 · SUBJECT', titlePlain: 'Character + festive wardrobe',
     title: 'Character, festive wardrobe, pose', layout: 'split',
     lead: `The first ~12 tokens name the character &mdash; that opening anchor is also the moderation bypass (more soon).`,
     body: `<div class="data-block"><div class="dl">{CHARACTER_NAME}</div><div class="dv">Naruto Uzumaki</div></div>
     <div class="data-block"><div class="dl">{IDENTIFYING_FEATURES}</div><div class="dv">spiky blond hair, whisker marks on cheeks, sharp blue eyes, warm festive smile</div></div>
     <div class="data-block"><div class="dl">{WARDROBE} / {POSE}</div><div class="dv">modern baju melayu &mdash; stand-collar shirt, songket samping, songkok &middot; close-up three-quarter-front festive portrait</div></div>
     <p>The wardrobe variable is where Raya enters &mdash; his canon jumpsuit becomes traditional Malay dress, editorial-styled.</p>`,
-    fragment: { label: '+ ¶1 subject + festive wardrobe + pose', lines: [
+    fragment: { label: '+ Paragraph 1 subject + festive wardrobe + pose', lines: [
       'Ultra-premium anime editorial poster of Naruto Uzumaki in a brutalist Japanese street-fashion graphic design aesthetic',
       'clean cel-shaded anime rendering, ultra crisp linework, smooth anime shadows, high-contrast graphic composition',
       'Naruto Uzumaki instantly recognizable with spiky blond hair, whisker marks on cheeks, sharp blue anime eyes, warm cheerful festive smile, modern baju melayu traditional Malay outfit with stand-collar shirt, songket samping wrapped at the waist, and songkok cap, reimagined in clean editorial streetwear styling, close-up three-quarter-front festive portrait composition',
@@ -85,28 +85,28 @@ window.SLIDES = [
     ] }
   },
   {
-    track: 'raya', kind: 'step', badge: 'FILL ¶2 · COLOUR', titlePlain: 'Colour theme',
+    track: 'raya', kind: 'step', badge: 'FILL Paragraph 2 · COLOUR', titlePlain: 'Colour theme',
     title: 'The colour theme', layout: 'split',
     lead: `Character-signature palette tuned festive. Naruto: his orange + Raya green &amp; gold.`,
     body: `<div class="data-block"><div class="dl">{COLOR_PALETTE}</div><div class="dv">warm vibrant orange, festive emerald green, Raya gold, cream-white, deep charcoal</div></div>
     <div class="data-block"><div class="dl">{SIGNATURE_COLOR_EFFECT}</div><div class="dv">gold (paint splashes + grunge)</div></div>
     <div class="data-block"><div class="dl">{CINEMATIC_TONE}</div><div class="dv">warm festive</div></div>`,
-    fragment: { label: '+ ¶2 colour theme', lines: [
+    fragment: { label: '+ Paragraph 2 colour theme', lines: [
       'Color theme adapted specifically for Naruto Uzumaki: warm vibrant orange, festive emerald green, Raya gold, cream-white, deep charcoal accents, gold paint splashes and grunge textures replacing the orange palette from the reference, balanced warm festive cinematic tones.'
     ] }
   },
   {
-    track: 'raya', kind: 'step', badge: 'FILL ¶3–5 · FIXED', titlePlain: 'Fixed paragraphs',
+    track: 'raya', kind: 'step', badge: 'FILL Paragraph 3–5 · FIXED', titlePlain: 'Fixed paragraphs',
     title: 'The fixed paragraphs', layout: 'split',
     lead: `Background grammar, quality block, and the hardcoded 9:16 aspect &mdash; identical for every cover.`,
     body: `<p>Three paragraphs drop in verbatim &mdash; the empirically-locked aesthetic:</p>
     <ul>
-      <li><b>&para;3</b> background grammar &mdash; Japanese typography, halftone, ink overlays, "no realism, no 3D"</li>
-      <li><b>&para;4</b> quality + lighting (here: soft golden + subtle rim light)</li>
-      <li><b>&para;5</b> <code>9:16 aspect ratio</code> &mdash; hardcoded for magazine-cover style, no override</li>
+      <li><b>Paragraph 3</b> background grammar &mdash; Japanese typography, halftone, ink overlays, "no realism, no 3D"</li>
+      <li><b>Paragraph 4</b> quality + lighting (here: soft golden + subtle rim light)</li>
+      <li><b>Paragraph 5</b> <code>9:16 aspect ratio</code> &mdash; hardcoded for magazine-cover style, no override</li>
     </ul>
     <p>The 5-paragraph prompt is now complete. &rarr;</p>`,
-    fragment: { label: '+ ¶3 + ¶4 + ¶5 (fixed)', lines: [
+    fragment: { label: '+ Paragraph 3 + Paragraph 4 + Paragraph 5 (fixed)', lines: [
       'Background filled with layered Japanese typography, abstract geometric blocks, worn print textures, halftone details, scratched ink overlays, subtle manga panel influence, luxury anime streetwear campaign vibe, modern graffiti influence, cinematic poster balance, negative space composition, ultra detailed cel shading, polished anime skin rendering, no painterly texture, no realism, no 3D render look, clean 2D anime aesthetic.',
       'Extremely high-detail anime illustration, sharp focus, premium print-ready composition, poster-grade layout hierarchy, modern Japanese graphic design influence, sophisticated brutalist typography system, stylized editorial framing, soft golden cinematic lighting, subtle rim light, premium anime collectible poster quality.',
       '9:16 aspect ratio, ultra high resolution, visually balanced for mobile wallpaper and reel cover, masterpiece anime poster aesthetic.'
@@ -126,11 +126,11 @@ window.SLIDES = [
     title: 'The assembled Raya prompt', layout: 'full',
     lead: `All five paragraphs, ready to render at 9:16.`,
     body: `<div class="frag frag-scroll" style="font-size:0.74rem; line-height:1.55">
-      <b>[&para;1]</b> Ultra-premium anime editorial poster of Naruto Uzumaki in a brutalist Japanese street-fashion graphic design aesthetic, clean cel-shaded anime rendering, ultra crisp linework, smooth anime shadows, high-contrast graphic composition, Naruto Uzumaki instantly recognizable with spiky blond hair, whisker marks on cheeks, sharp blue anime eyes, warm cheerful festive smile, modern baju melayu traditional Malay outfit with stand-collar shirt, songket samping wrapped at the waist, and songkok cap, reimagined in clean editorial streetwear styling, close-up three-quarter-front festive portrait composition, dynamic vertical typography integrated into background, bold brutalist layout design, distressed ink splatter textures, Japanese poster graphics, contemporary anime editorial magazine aesthetic, premium fashion campaign styling, minimal but powerful color blocking.<br><br>
-      <b>[&para;2]</b> Color theme adapted specifically for Naruto Uzumaki: warm vibrant orange, festive emerald green, Raya gold, cream-white, deep charcoal accents, gold paint splashes and grunge textures replacing the orange palette from the reference, balanced warm festive cinematic tones.<br><br>
-      <b>[&para;3&ndash;5 fixed]</b> background grammar (Japanese typography, halftone, ink overlays, "no realism, no 3D") &middot; quality block + soft golden cinematic lighting + subtle rim light &middot; 9:16 aspect ratio, ultra high resolution, masterpiece anime poster aesthetic.
+      <b>[Paragraph 1]</b> Ultra-premium anime editorial poster of Naruto Uzumaki in a brutalist Japanese street-fashion graphic design aesthetic, clean cel-shaded anime rendering, ultra crisp linework, smooth anime shadows, high-contrast graphic composition, Naruto Uzumaki instantly recognizable with spiky blond hair, whisker marks on cheeks, sharp blue anime eyes, warm cheerful festive smile, modern baju melayu traditional Malay outfit with stand-collar shirt, songket samping wrapped at the waist, and songkok cap, reimagined in clean editorial streetwear styling, close-up three-quarter-front festive portrait composition, dynamic vertical typography integrated into background, bold brutalist layout design, distressed ink splatter textures, Japanese poster graphics, contemporary anime editorial magazine aesthetic, premium fashion campaign styling, minimal but powerful color blocking.<br><br>
+      <b>[Paragraph 2]</b> Color theme adapted specifically for Naruto Uzumaki: warm vibrant orange, festive emerald green, Raya gold, cream-white, deep charcoal accents, gold paint splashes and grunge textures replacing the orange palette from the reference, balanced warm festive cinematic tones.<br><br>
+      <b>[Paragraph 3&ndash;5 fixed]</b> background grammar (Japanese typography, halftone, ink overlays, "no realism, no 3D") &middot; quality block + soft golden cinematic lighting + subtle rim light &middot; 9:16 aspect ratio, ultra high resolution, masterpiece anime poster aesthetic.
     </div>
-    <p class="note">&para;3&ndash;&para;5 are the fixed block &mdash; identical for every cover. Only &para;1 and &para;2 changed for the Raya look.</p>`
+    <p class="note">Paragraph 3&ndash;Paragraph 5 are the fixed block &mdash; identical for every cover. Only Paragraph 1 and Paragraph 2 changed for the Raya look.</p>`
   },
   {
     track: 'raya', kind: 'engine', badge: 'STEP 6.5 + ENGINE', titlePlain: 'Render gate + helper',
@@ -174,20 +174,20 @@ window.SLIDES = [
     <p>We keep Naruto and the 5-paragraph skeleton &mdash; we just choose <strong>jutsu-casting</strong> randomization values instead of a calm festive portrait. New prompt, fresh panel. &rarr;</p>`
   },
   {
-    track: 'naruto', kind: 'step', badge: 'FILL ¶1 · SUBJECT', titlePlain: 'Same opening, same features',
+    track: 'naruto', kind: 'step', badge: 'FILL Paragraph 1 · SUBJECT', titlePlain: 'Same opening, same features',
     title: 'Same opening, same features', layout: 'split',
     lead: `Identical opening anchor and identifying features as the Raya cover &mdash; the subject hasn't changed.`,
     body: `<div class="data-block"><div class="dl">{CHARACTER_NAME}</div><div class="dv">Naruto Uzumaki</div></div>
     <div class="data-block"><div class="dl">{IDENTIFYING_FEATURES}</div><div class="dv">spiky blond hair, whisker marks on cheeks, sharp blue anime eyes</div></div>
     <p>Same first lines as Example 1. Everything that follows &mdash; expression, wardrobe, pose &mdash; is where the battle diverges.</p>`,
-    fragment: { label: '+ ¶1 opening + features', lines: [
+    fragment: { label: '+ Paragraph 1 opening + features', lines: [
       'Ultra-premium anime editorial poster of Naruto Uzumaki in a brutalist Japanese street-fashion graphic design aesthetic',
       'clean cel-shaded anime rendering, ultra crisp linework, smooth anime shadows, high-contrast graphic composition',
       'Naruto Uzumaki instantly recognizable with spiky blond hair, whisker marks on cheeks, sharp blue anime eyes'
     ] }
   },
   {
-    track: 'naruto', kind: 'step', badge: 'FILL ¶1 · BATTLE', titlePlain: 'Expression + wardrobe + jutsu',
+    track: 'naruto', kind: 'step', badge: 'FILL Paragraph 1 · BATTLE', titlePlain: 'Expression + wardrobe + jutsu',
     title: 'Expression, wardrobe, the jutsu', layout: 'split',
     lead: `Here it diverges from the Raya cover &mdash; Action/Scene type = jutsu-casting. Rasenshuriken dominates the frame.`,
     body: `<p>The high-energy randomization values (vs the festive ones in Example 1):</p>
@@ -197,7 +197,7 @@ window.SLIDES = [
       <li><b>{POSE}</b> &mdash; full-body hero low-angle battle-action stance</li>
       <li><b>jutsu VFX</b> &mdash; a massive spinning Wind Style: Rasenshuriken, swirling blue-white wind chakra screaming in his hand</li>
     </ul>
-    <p>Plus the fixed layout markers that close &para;1. &rarr;</p>`,
+    <p>Plus the fixed layout markers that close Paragraph 1. &rarr;</p>`,
     fragment: { label: '+ expression + wardrobe + jutsu + pose', lines: [
       'intense determined battle expression',
       'signature orange and black tactical jumpsuit reimagined as modern technical streetwear with hidden leaf forehead protector and layered combat folds',
@@ -206,28 +206,28 @@ window.SLIDES = [
     ] }
   },
   {
-    track: 'naruto', kind: 'step', badge: 'FILL ¶2 · COLOUR', titlePlain: 'Colour theme',
+    track: 'naruto', kind: 'step', badge: 'FILL Paragraph 2 · COLOUR', titlePlain: 'Colour theme',
     title: 'The colour theme', layout: 'split',
     lead: `Same character, battle palette: orange, black, chakra-blue (vs the Raya green &amp; gold).`,
     body: `<div class="data-block"><div class="dl">{COLOR_PALETTE}</div><div class="dv">vibrant orange, deep black, warm cream-white, muted charcoal, brilliant chakra-blue wind energy</div></div>
     <div class="data-block"><div class="dl">{SIGNATURE_COLOR_EFFECT}</div><div class="dv">blue chakra wind energy (paint splashes + grunge)</div></div>
     <div class="data-block"><div class="dl">{CINEMATIC_TONE}</div><div class="dv">dramatic high-energy</div></div>`,
-    fragment: { label: '+ ¶2 colour theme', lines: [
+    fragment: { label: '+ Paragraph 2 colour theme', lines: [
       'Color theme adapted specifically for Naruto Uzumaki: vibrant orange, deep black, warm cream-white, muted charcoal accents, brilliant chakra-blue wind energy, blue chakra wind energy paint splashes and grunge textures replacing the orange palette from the reference, balanced dramatic high-energy cinematic tones.'
     ] }
   },
   {
-    track: 'naruto', kind: 'step', badge: 'FILL ¶3–5 · FIXED', titlePlain: 'Fixed paragraphs',
+    track: 'naruto', kind: 'step', badge: 'FILL Paragraph 3–5 · FIXED', titlePlain: 'Fixed paragraphs',
     title: 'The fixed paragraphs', layout: 'split',
-    lead: `Identical to the Raya cover's &para;3&ndash;5 &mdash; except the one lighting variable shifts to dramatic action lighting.`,
+    lead: `Identical to the Raya cover's Paragraph 3&ndash;5 &mdash; except the one lighting variable shifts to dramatic action lighting.`,
     body: `<p>The fixed block drops in verbatim; only the lighting register changes for a battle scene:</p>
     <ul>
-      <li><b>&para;3</b> background grammar (unchanged)</li>
-      <li><b>&para;4</b> quality + <b>dramatic action lighting</b></li>
-      <li><b>&para;5</b> <code>9:16 aspect ratio</code> (hardcoded)</li>
+      <li><b>Paragraph 3</b> background grammar (unchanged)</li>
+      <li><b>Paragraph 4</b> quality + <b>dramatic action lighting</b></li>
+      <li><b>Paragraph 5</b> <code>9:16 aspect ratio</code> (hardcoded)</li>
     </ul>
     <p>The full battle prompt is now complete. &rarr;</p>`,
-    fragment: { label: '+ ¶3 + ¶4 + ¶5 (fixed)', lines: [
+    fragment: { label: '+ Paragraph 3 + Paragraph 4 + Paragraph 5 (fixed)', lines: [
       'Background filled with layered Japanese typography, abstract geometric blocks, worn print textures, halftone details, scratched ink overlays, subtle manga panel influence, luxury anime streetwear campaign vibe, modern graffiti influence, cinematic poster balance, negative space composition, ultra detailed cel shading, polished anime skin rendering, no painterly texture, no realism, no 3D render look, clean 2D anime aesthetic.',
       'Extremely high-detail anime illustration, sharp focus, premium print-ready composition, poster-grade layout hierarchy, modern Japanese graphic design influence, sophisticated brutalist typography system, stylized editorial framing, dramatic action lighting, subtle rim light, premium anime collectible poster quality.',
       '9:16 aspect ratio, ultra high resolution, visually balanced for mobile wallpaper and reel cover, masterpiece anime poster aesthetic.'
@@ -265,13 +265,13 @@ window.SLIDES = [
   {
     track: 'naruto', kind: 'step', badge: 'STEP 6 · ASSEMBLED', titlePlain: 'Full battle prompt',
     title: 'The full battle prompt', layout: 'full',
-    lead: `Five paragraphs, ready to render at 9:16. Compare ¶1 and ¶2 against the Raya cover &mdash; same skeleton, different variables.`,
+    lead: `Five paragraphs, ready to render at 9:16. Compare Paragraph 1 and Paragraph 2 against the Raya cover &mdash; same skeleton, different variables.`,
     body: `<div class="frag frag-scroll" style="font-size:0.74rem; line-height:1.55">
-      <b>[&para;1]</b> Ultra-premium anime editorial poster of Naruto Uzumaki in a brutalist Japanese street-fashion graphic design aesthetic, clean cel-shaded anime rendering, ultra crisp linework, smooth anime shadows, high-contrast graphic composition, Naruto Uzumaki instantly recognizable with spiky blond hair, whisker marks on cheeks, sharp blue anime eyes, intense determined battle expression, signature orange and black tactical jumpsuit reimagined as modern technical streetwear with hidden leaf forehead protector and layered combat folds, full-body hero low-angle battle-action stance thrusting forward a massive spinning Wind Style Rasenshuriken disc of swirling blue-white wind chakra screaming with energy in his hand, dynamic vertical typography integrated into background, bold brutalist layout design, distressed ink splatter textures, Japanese poster graphics, contemporary anime editorial magazine aesthetic, premium fashion campaign styling, minimal but powerful color blocking.<br><br>
-      <b>[&para;2]</b> Color theme adapted specifically for Naruto Uzumaki: vibrant orange, deep black, warm cream-white, muted charcoal accents, brilliant chakra-blue wind energy, blue chakra wind energy paint splashes and grunge textures replacing the orange palette from the reference, balanced dramatic high-energy cinematic tones.<br><br>
-      <b>[&para;3&ndash;5 fixed]</b> background grammar (Japanese typography, halftone, ink overlays, "no realism, no 3D") &middot; quality block + dramatic action lighting &middot; 9:16 aspect ratio, ultra high resolution, masterpiece anime poster aesthetic.
+      <b>[Paragraph 1]</b> Ultra-premium anime editorial poster of Naruto Uzumaki in a brutalist Japanese street-fashion graphic design aesthetic, clean cel-shaded anime rendering, ultra crisp linework, smooth anime shadows, high-contrast graphic composition, Naruto Uzumaki instantly recognizable with spiky blond hair, whisker marks on cheeks, sharp blue anime eyes, intense determined battle expression, signature orange and black tactical jumpsuit reimagined as modern technical streetwear with hidden leaf forehead protector and layered combat folds, full-body hero low-angle battle-action stance thrusting forward a massive spinning Wind Style Rasenshuriken disc of swirling blue-white wind chakra screaming with energy in his hand, dynamic vertical typography integrated into background, bold brutalist layout design, distressed ink splatter textures, Japanese poster graphics, contemporary anime editorial magazine aesthetic, premium fashion campaign styling, minimal but powerful color blocking.<br><br>
+      <b>[Paragraph 2]</b> Color theme adapted specifically for Naruto Uzumaki: vibrant orange, deep black, warm cream-white, muted charcoal accents, brilliant chakra-blue wind energy, blue chakra wind energy paint splashes and grunge textures replacing the orange palette from the reference, balanced dramatic high-energy cinematic tones.<br><br>
+      <b>[Paragraph 3&ndash;5 fixed]</b> background grammar (Japanese typography, halftone, ink overlays, "no realism, no 3D") &middot; quality block + dramatic action lighting &middot; 9:16 aspect ratio, ultra high resolution, masterpiece anime poster aesthetic.
     </div>
-    <p class="note">&para;3&ndash;&para;5 are the same fixed block as the Raya cover. Only &para;1 and &para;2 changed &mdash; that's the whole trick.</p>`
+    <p class="note">Paragraph 3&ndash;Paragraph 5 are the same fixed block as the Raya cover. Only Paragraph 1 and Paragraph 2 changed &mdash; that's the whole trick.</p>`
   },
   {
     track: 'naruto', kind: 'output', badge: 'RESULT · OUTPUT', titlePlain: 'Battle cover rendered',
@@ -298,8 +298,8 @@ window.SLIDES = [
     body: `<div class="flow">
       <span class="node">request</span><span class="arr">&rarr;</span>
       <span class="node">subject + style</span><span class="arr">&rarr;</span>
-      <span class="node">fill ¶1&ndash;2</span><span class="arr">&rarr;</span>
-      <span class="node">fixed ¶3&ndash;5</span><span class="arr">&rarr;</span>
+      <span class="node">fill Paragraph 1&ndash;2</span><span class="arr">&rarr;</span>
+      <span class="node">fixed Paragraph 3&ndash;5</span><span class="arr">&rarr;</span>
       <span class="node">safety pass</span><span class="arr">&rarr;</span>
       <span class="node">render</span>
     </div>
@@ -308,7 +308,7 @@ window.SLIDES = [
       <li><b>Hari Raya</b> &mdash; baju melayu, festive palette, calm portrait</li>
       <li><b>Battle</b> &mdash; Rasenshuriken, chakra-blue palette, low-angle action + the full safety toolkit</li>
     </ul>
-    <p>Only <strong>&para;1</strong> and <strong>&para;2</strong> ever changed. <strong>The fixed block carries the aesthetic; the variables carry the look; the opening anchor carries it past moderation.</strong></p>`
+    <p>Only <strong>Paragraph 1</strong> and <strong>Paragraph 2</strong> ever changed. <strong>The fixed block carries the aesthetic; the variables carry the look; the opening anchor carries it past moderation.</strong></p>`
   },
   {
     track: 'outro', kind: 'outro', badge: 'FIN', titlePlain: 'Close',
