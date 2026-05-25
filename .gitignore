@@ -3,3 +3,24 @@
 # List of ignore files
 *.exe
 *.txt
+
+# --- Alice Image Generation Guide ---
+# Scratch / reference (not part of the deck)
+_ref-architecture.html
+
+# Working plan — Alice's local reference, never tracked
+Project Resources/
+
+# Claude Code settings
+.claude/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~

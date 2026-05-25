@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alice Image Generation — The Guided Tour</title>
+<meta name="description" content="A step-by-step guided tour of the Alice image-generation pipeline — watch a prompt assemble from real data and end on the rendered image. Companion to the architecture diagram.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <header class="brandbar">
+      <span class="title">Alice Image Generation · The Guided Tour</span>
+      <span class="meta">Prism Lv.12 · gpt-image-2 · ← → to navigate</span>
+    </header>
+
+    <main class="stage" id="stage"><!-- active slide rendered here by deck.js --></main>
+
+    <nav class="nav">
+      <button id="prev" aria-label="Previous slide">◀ Prev</button>
+      <div class="dots" id="dots"></div>
+      <button id="next" aria-label="Next slide">Next ▶</button>
+    </nav>
+    <div style="text-align:center"><span class="counter" id="counter"></span></div>
+
+  </div>
+
+  <!-- slides.js defines window.SLIDES; deck.js consumes it -->
+  <script src="js/slides.js"></script>
+  <script src="js/deck.js"></script>
+</body>
+</html>
