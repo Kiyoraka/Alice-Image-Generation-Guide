@@ -292,6 +292,10 @@ table.cook td.good { color: var(--green); font-family: var(--mono); font-size: 0
   }
   .dots { display: none; }
   .counter { flex: 1 1 auto; text-align: center; min-width: 0; }
+
+  /* mobile header: hide the meta line, center the title */
+  .brandbar { justify-content: center; text-align: center; }
+  .brandbar .meta { display: none; }
 }
 
 /* ===== Phone ===== */
