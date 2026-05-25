@@ -219,10 +219,12 @@ table.cook td.good { color: var(--green); font-family: var(--mono); font-size: 0
 }
 
 /* ===== Result slide ===== */
-.slide--result .slide-cols { grid-template-columns: 1fr 0.8fr; }
+.slide--result .slide-cols { grid-template-columns: 0.9fr 1fr; align-items: center; }
 .result-img {
-  width: 100%; border-radius: 12px; border: 1px solid var(--line);
-  box-shadow: 0 6px 22px rgba(80,50,140,0.18); display: block; background: #000;
+  display: block; margin: 0 auto;
+  max-width: 100%; max-height: 58vh; width: auto; height: auto;
+  border-radius: 12px; border: 1px solid var(--line);
+  box-shadow: 0 6px 22px rgba(80,50,140,0.18); background: #000;
 }
 .result-cap { font-size: 0.78rem; color: var(--text-dim); margin-top: 8px; text-align: center; }
 .meta-card { background: var(--card2); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; font-size: 0.85rem; }
@@ -272,6 +274,7 @@ table.cook td.good { color: var(--green); font-family: var(--mono); font-size: 0
 @media (max-width: 760px) {
   .slide-cols { grid-template-columns: 1fr; }
   .slide--result .slide-cols { grid-template-columns: 1fr; }
+  .slide--result .result-img { max-height: 44vh; }
   .promptpanel { position: static; margin-top: 4px; }
   .promptpanel-body { max-height: 38vh; }
   .slide { padding: 20px 18px; }
